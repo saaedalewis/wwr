@@ -1,85 +1,142 @@
 <!DOCTYPE html>
-<html lang="dry oar.png">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dry Oar Rafting CO.</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.google.com/specimen/Playfair">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Dry Oar Rafting CO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <style>
+       :root {
+            --primary-color: #16425B;
+            --secondary-color: #F9DC5C;
+            --accent1-color: #9CF7EF;
+            --accent2-color: #543B2F;
+        }
         body {
-            font-family: 'playfair', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
             margin: 0;
             padding: 0;
+            background-color: var(--accent1-color);
+            color: var(--primary-color);
         }
         header {
-            
-            color: white;
+            background-color: var(--primary-color);
             padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        header img {
+            max-height: 60px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--accent2-color);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            color: var(--primary-color);
+        }
+        .hero {
+            position: relative;
+            height: 400px;
+            background-image: url('images/rafting.jpg');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
+            align-items: center;
+            color: var(--secondary-color);
         }
-        nav ul li {
-            margin: 0 15px;
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px var(--accent2-color);
+            position: absolute;
         }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
+        .hero article {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 20px;
+            max-width: 600px;
         }
-        section {
-            padding: 50px;
-            text-align: center;
+        .hero article img {
+            float: right;
+            max-height: 80px;
+            margin-left: 10px;
         }
         footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
+            background-color: var(--primary-color);
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        footer nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer nav a:hover {
+            color: var(--accent2-color);
+        }
+        footer .sociallinks a img {
+            height: 30px;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dry Oar Rafting CO.</h1>
-        <p>Your gateway to thrilling white-water rafting experiences!</p>
+        <img src="images/dry oar.png" alt="Dry Oar Rafting CO Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-
-
-        </ul>
-    </nav>
-
-    <section id="home">
-        <h2>Welcome to Dry Oar Rafting CO. </h2>
-        <p>Explore the wild rivers with our expert-guided rafting adventures!</p>
-    </section>
-
-    <section id="History">
-        <h2>About Us</h2>
-        <p>We are a team of passionate outdoor enthusiasts dedicated to providing the best white-water rafting experiences. With over 20 years of experience, safety and fun are our top priorities!</p>
-    </section>
-
- 
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out some of our exhilarating rafting moments captured along the wild rapids!</p>
-        ,<img src="images/rafting1.jpg">
-        <img src="images/rafting2.jpg">
-        <img src="images/rafting3.jpg">
-        <img src="images/rafting4.jpg">
-        <img src="images/rafting5.jpg">
-    </section>
-
-  
+    <main>
+        <div class="hero">
+            <img src="images/river2.jpg" alt="Dry oar">
+           
+            <h1>Dry Oar Rafting CO</h1>
+            
+        </div>
+        <section>
+            <h2>History</h2>
+            <p>We are a team of passionate outdoor enthusiasts dedicated to providing the best white-water rafting experiences. With over 20 years of experience, safety and fun are our top priorities.</p>
+        </section>
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <img src="images/rafting a1.jpg" alt="Rafting Image 1">
+            <img src="images/rafting a2.jpg" alt="Rafting Image 2">
+            <img src="images/rafting1.jpg" alt="Rafting Image 3">
+            <img src="images/rafting65_a3.jpg" alt="Rafting Image 4">
+            <img src="images/rafting6_a5.jpg" alt="Rafting Image 5">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dry Oar Rafting CO | Created by Ssaeda Davis</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/fb.jpeg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/tw.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/ig.jpeg" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
